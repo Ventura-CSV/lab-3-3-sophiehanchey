@@ -16,7 +16,7 @@ def test_main_1():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*97[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*97[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
 
@@ -33,7 +33,7 @@ def test_main_2():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*100[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*100[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
 
@@ -50,6 +50,6 @@ def test_main_3():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*3[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*3[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
