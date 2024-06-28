@@ -7,6 +7,10 @@ def main():
     maxnum = num1
     if(num2>maxnum):
         maxnum = num2
+        if(num3>maxnum):
+            maxnum = num3
+        else:
+            maxnum
     elif(num3>maxnum):
         maxnum = num3
     else:
